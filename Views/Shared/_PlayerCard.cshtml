@@ -1,0 +1,15 @@
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">
+      <h5>@Model.User.Name</h5>
+      <span class="playerDead">
+          <span class="damageToPlayer red-and-small-text"></span>
+          <span class="card-text currentPlayerHp">100</span> hp
+          <span class="currentBalance">@Model.User.Money</span> mony
+      </span>
+  </div>
+  <div class="card-body">
+      <form class="addMoney" method="post">
+          <button type="submit" class="btn btn-success">Make mony</button>
+      </form>
+  </div>
+</div>

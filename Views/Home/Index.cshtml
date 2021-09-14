@@ -1,0 +1,37 @@
+﻿@model HomeViewModel
+@section Scripts{
+<script src="~/js/script.js"></script>
+}
+
+@* <div class="container-fluid text-light"> *@
+    <div class="game-screen">
+        <div class="player-card">
+            @Html.Partial("_PlayerCard")
+        </div>
+
+        <div class="monster-card"> 
+            @Html.Partial("_MonsterCard")
+        </div>
+
+        <div class="event-log"> 
+            @Html.Partial("_Eventlog")
+        </div>
+
+        <div class="fight-action"> 
+            @Html.Partial("_FightAction")
+        </div>
+
+        <div class="retaliate"> 
+            <button type="button" class="btn btn-block btn-lg btn-outline-danger retaliation-indicator">Retaliation!</button>
+        </div>
+
+        <div class="inventory"> 
+            <button type="button" class="btn btn-outline-info btn-lg inventory">Inventory here</button>
+        </div>
+
+        <div class="actions">
+            @Html.Partial("_Actions")
+        </div>
+    </div>
+@* </div> *@
+ 

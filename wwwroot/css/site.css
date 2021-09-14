@@ -1,0 +1,148 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.eventRow {
+  font-size: 10px;
+}
+
+.tbody {
+  overflow: scroll;
+}
+
+.game-screen {
+  display: grid;
+  /* grid-template-columns: repeat(2, 4fr) 2fr; */
+  grid-template-columns: repeat(2, 4fr) 1fr;
+  grid-template-rows: 3fr 1fr 3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 100%;
+  height: 80vh;
+  }
+  
+  .player-card { 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+
+  .monster-card { 
+    grid-area: 1 / 2 / 2 / 3; 
+  }
+
+  .event-log { 
+    /* grid-area: 1 / 3 / 4 / 5; */
+    grid-area: 1 / 3 / 4 / 4;
+  }
+
+  .fight-action { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 2 / 1 / 3 / 2; 
+  }
+
+  .retaliate {
+    display: flex;
+    justify-content: center; 
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .inventory { 
+    display: flex;
+    justify-content: center;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .actions { 
+    grid-area: 3 / 2 / 4 / 3; 
+  }
+
+span.red-and-small-text {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.h5 {
+  display: inline;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.container {
+  display: grid;
+}
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-danger {
+  color: white !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #343A40 !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
