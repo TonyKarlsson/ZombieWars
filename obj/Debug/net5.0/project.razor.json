@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/TK-MAC/code/TonyKarlsson/ZombieWars/Views/Shared/_Inventory.cshtml",
+      "TargetPath": "Views\\Shared\\_Inventory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/TK-MAC/code/TonyKarlsson/ZombieWars/Views/Shared/_MonsterCard.cshtml",
       "TargetPath": "Views\\Shared\\_MonsterCard.cshtml",
       "FileKind": "mvc"

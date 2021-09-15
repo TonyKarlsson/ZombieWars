@@ -1,6 +1,7 @@
 ﻿@model HomeViewModel
 @section Scripts{
 <script src="~/js/script.js"></script>
+<script src="~/js/inventory.js"></script>
 }
 
 @* <div class="container-fluid text-light"> *@
@@ -26,7 +27,8 @@
         </div>
 
         <div class="inventory"> 
-            <button type="button" class="btn btn-outline-info btn-lg inventory">Inventory here</button>
+            @* <button type="button" class="btn btn-outline-info btn-lg inventory">Inventory here</button> *@
+            @Html.Partial("_Inventory")
         </div>
 
         <div class="actions">

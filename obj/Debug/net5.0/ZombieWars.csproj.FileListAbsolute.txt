@@ -359,3 +359,4 @@
 /Users/TK-MAC/code/TonyKarlsson/ZombieWars/obj/Debug/net5.0/Razor/Views/Shared/_Actions.cshtml.g.cs
 /Users/TK-MAC/code/TonyKarlsson/ZombieWars/obj/Debug/net5.0/Razor/Views/Shared/_FightAction.cshtml.g.cs
 /Users/TK-MAC/code/TonyKarlsson/ZombieWars/obj/Debug/net5.0/Razor/Views/Shared/_MonsterCard.cshtml.g.cs
+/Users/TK-MAC/code/TonyKarlsson/ZombieWars/obj/Debug/net5.0/Razor/Views/Shared/_Inventory.cshtml.g.cs

@@ -80,6 +80,7 @@
     }
 
     const damageToMonster = (baseDamage) => {
+      console.log(inventory.knife);
       let fightMove;
       if (baseDamage == 1) {
         fightMove = "punched ";
