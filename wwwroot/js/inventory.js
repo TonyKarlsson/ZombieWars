@@ -4,7 +4,6 @@ const inventory = {
   money: 100
 };
 
-
   for (const [object, amount] of Object.entries(inventory)) {
     let newInventoryRow = `<tr> <td>${object}</td> <td>${amount}</td> </tr>`;
     let inventoryRow = document.querySelector(".inventoryRow");

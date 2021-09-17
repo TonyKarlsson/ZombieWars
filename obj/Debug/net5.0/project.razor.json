@@ -15659,11 +15659,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/TK-MAC/code/TonyKarlsson/ZombieWars/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/TK-MAC/code/TonyKarlsson/ZombieWars/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
