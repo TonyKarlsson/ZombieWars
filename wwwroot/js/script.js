@@ -40,23 +40,6 @@
       }
     }
 
-    const attack = (weapon) => {
-      let weaponType = weapon.id;
-      switch (weaponType) {
-        case "knife":
-          damageToMonster(5);
-            break;
-        case "gun":
-          damageToMonster(10);
-            break;
-        case "fist":
-          damageToMonster(1);
-            break;
-        default:
-            alert("That weapon doesn't exist, yet!");
-      }
-    }
-
     const calculateDamage = (baseDamage) => {
       let damageDone = baseDamage * Math.ceil(Math.random() * 10);
       return damageDone;
@@ -121,13 +104,8 @@
       }
     }
 
-    // const resetMonsterHp = () => {
-    //   currentMon sterHp = 50;
-    // }
-
     let moneyButton = document.querySelector(".addMoney");
     let newMonster = document.querySelector(".new-monster");
     moneyButton.addEventListener("submit", showMoney);
-    // newMonster.addEventListener("onclick", resetMonsterHp);
 
 

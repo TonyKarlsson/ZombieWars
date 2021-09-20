@@ -1,7 +1,8 @@
 const inventory = {
   knife: 1, 
   gun: 0, 
-  money: 100
+  money: 100,
+  junk: 25
 };
 
   for (const [object, amount] of Object.entries(inventory)) {
