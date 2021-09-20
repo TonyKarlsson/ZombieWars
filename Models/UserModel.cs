@@ -1,8 +1,11 @@
-public class UserModel
+using System;
+
+namespace ZombieWars.Models
 {
-  public string Name { get; set; }
-  public decimal Money { get; set; }
-
-  public decimal Hp { get; set; }
-
+  public class UserModel
+  {
+    public string Name { get; set; }
+    public decimal Money { get; set; }
+    public decimal Hp { get; set; }
+  }
 }

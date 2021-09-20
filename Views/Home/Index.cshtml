@@ -6,35 +6,35 @@
 
 
 @* <div class="container-fluid text-light"> *@
-    <div class="game-screen">
-        <div class="player-card">
-            @Html.Partial("_PlayerCard")
-        </div>
-
-        <div class="monster-card"> 
-            @Html.Partial("_MonsterCard")
-        </div>
-
-        <div class="event-log"> 
-            @Html.Partial("_Eventlog")
-        </div>
-
-        <div class="fight-action"> 
-            @Html.Partial("_FightAction")
-        </div>
-
-        <div class="retaliate"> 
-            <button type="button" class="btn btn-block btn-lg btn-outline-danger retaliation-indicator">Retaliation!</button>
-        </div>
-
-        <div class="inventory"> 
-            @* <button type="button" class="btn btn-outline-info btn-lg inventory">Inventory here</button> *@
-            @Html.Partial("_Inventory")
-        </div>
-
-        <div class="actions">
-            @Html.Partial("_Actions")
-        </div>
+<div class="game-screen">
+    <div class="player-card">
+        <partial name="_PlayerCard" />
     </div>
+
+    <div class="monster-card">
+        <partial name="_MonsterCard" />
+    </div>
+
+    <div class="event-log">
+        <partial name="_Eventlog" />
+    </div>
+
+    <div class="fight-action">
+        <partial name="_FightAction" />
+    </div>
+
+    <div class="retaliate">
+        <button type="button"
+            class="btn btn-block btn-lg btn-outline-danger retaliation-indicator">Retaliation!</button>
+    </div>
+
+    <div class="inventory">
+        @* <button type="button" class="btn btn-outline-info btn-lg inventory">Inventory here</button> *@
+        <partial name="_Inventory" />
+    </div>
+
+    <div class="actions">
+        <partial name="_Actions" />
+    </div>
+</div>
 @* </div> *@
- 

@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ZombieWars.Models;
+using ZombieWars.BusinessLayer;
 
 namespace ZombieWars.Controllers
 {
   public class HomeController : Controller
   {
     private readonly ILogger<HomeController> _logger;
+    private readonly IMoneyBL _moneyBL;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IMoneyBL money)
     {
       _logger = logger;
+      _moneyBL = money;
     }
 
     public IActionResult Index()
@@ -30,7 +30,7 @@ namespace ZombieWars.Controllers
       // monster.Hp = 60;
       // monster.Damage = 8;
 
-// Replace the two functions above with more of whats below
+      // Replace the two functions above with more of whats below
 
       var model = new HomeViewModel();
       model.User = player;
@@ -43,9 +43,12 @@ namespace ZombieWars.Controllers
       return new JsonResult(money);
     }
 
-    public IActionResult Privacy()
+    public IActionResult TestMoney()
     {
-      return View();
+      var result = _moneyBL.IsPrime(43);
+      Console.WriteLine(result);
+
+      return new JsonResult(result);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
