@@ -27,6 +27,7 @@ namespace ZombieWars
             services.AddControllersWithViews();
             services.AddMvc().AddRazorRuntimeCompilation();
             services.AddScoped<IMoneyBL, MoneyBL>();
+            services.AddScoped<IFightingBL, FightingBL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

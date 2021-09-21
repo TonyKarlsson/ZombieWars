@@ -6,7 +6,8 @@ namespace ZombieWars.BusinessLayer
   {
     bool IsPrime(int num);
     void ShowMoney();
-  }
+    int RandomMoney();
+    }
 
   public class MoneyBL : IMoneyBL
   {
@@ -27,20 +28,24 @@ namespace ZombieWars.BusinessLayer
       return num > 1;
     }
 
+    public int RandomMoney()
+    {
+      int randomNumber = new Random().Next(100);
+      return randomNumber;
+    }
+
     public void ShowMoney()
     {
-      int randomMoney = new Random().Next(100);
-
-      if (IsPrime(randomMoney))
+      if (IsPrime(RandomMoney()))
       {
-        int loseMoney = -randomMoney * 2;
+        int loseMoney = RandomMoney() * -2;
         AddMoney(loseMoney);
         SetMoney(loseMoney);
       }
       else
       {
-        AddMoney(randomMoney);
-        SetMoney(randomMoney);
+        AddMoney(RandomMoney());
+        SetMoney(RandomMoney());
       }
     }
 

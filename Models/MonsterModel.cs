@@ -3,13 +3,14 @@ using System;
 namespace ZombieWars.Models
 {
   public class MonsterModel
-  { 
+  {
     public string Type { get; set; }
     public decimal Hp { get; set; }
     public decimal Damage { get; set; }
   }
 
-  public class ZombieModel : IMonsterModel {
+  public class ZombieModel : IMonsterModel
+  {
     public ZombieModel(decimal hp, decimal damage)
     {
       Type = "Zombie";
@@ -21,7 +22,8 @@ namespace ZombieWars.Models
     public decimal Damage { get; set; }
   }
 
-  public interface IMonsterModel {
+  public interface IMonsterModel
+  {
     string Type { get; }
     decimal Hp { get; set; }
     decimal Damage { get; set; }

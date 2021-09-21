@@ -8,28 +8,28 @@
       })
     }
 
-    const showMoney = (event) => {
-      let randomMoney = Math.floor(Math.random() * 100);
-      if (isPrime(randomMoney)) {
-        let loseMoney = -randomMoney * 2;
-        addMoney(loseMoney);
-        setMoney(loseMoney);
-        event.preventDefault();
-      } else {
-        addMoney(randomMoney);
-        setMoney(randomMoney);
-      }
+    // const showMoney = (event) => {
+    //   let randomMoney = Math.floor(Math.random() * 100);
+    //   if (isPrime(randomMoney)) {
+    //     let loseMoney = -randomMoney * 2;
+    //     addMoney(loseMoney);
+    //     setMoney(loseMoney);
+    //     event.preventDefault();
+    //   } else {
+    //     addMoney(randomMoney);
+    //     setMoney(randomMoney);
+    //   }
 
-      event.preventDefault();
-    }
+    //   event.preventDefault();
+    // }
 
-    const isPrime = num => {
-      for(let i = 2; i < num; i++) {
-        if(num % i === 0) return false;
-      }
+    // const isPrime = num => {
+    //   for(let i = 2; i < num; i++) {
+    //     if(num % i === 0) return false;
+    //   }
 
-      return num > 1;
-    }
+    //   return num > 1;
+    // }
 
     const addMoney = (amountToAdd) => {
       let currentBalance = document.querySelector(".currentBalance").innerHTML;
@@ -42,10 +42,10 @@
       }
     }
 
-    const calculateDamage = (baseDamage) => {
-      let damageDone = baseDamage * Math.ceil(Math.random() * 10);
-      return damageDone;
-    }
+    // const calculateDamage = (baseDamage) => {
+    //   let damageDone = baseDamage * Math.ceil(Math.random() * 10);
+    //   return damageDone;
+    // }
 
     const damageToPlayer = (baseDamage) => {
       let damageDone = calculateDamage(baseDamage);

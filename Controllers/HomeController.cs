@@ -45,7 +45,9 @@ namespace ZombieWars.Controllers
 
     public IActionResult TestMoney()
     {
-      var result = _moneyBL.IsPrime(43);
+      var number = _moneyBL.RandomMoney();
+      var result = _moneyBL.IsPrime(number);
+      Console.WriteLine(number);
       Console.WriteLine(result);
 
       return new JsonResult(result);
