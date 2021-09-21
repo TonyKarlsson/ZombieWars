@@ -11,11 +11,13 @@ namespace ZombieWars.Controllers
   {
     private readonly ILogger<HomeController> _logger;
     private readonly IMoneyBL _moneyBL;
+    private readonly IFightingBL _fightingBL;
 
-    public HomeController(ILogger<HomeController> logger, IMoneyBL money)
+    public HomeController(ILogger<HomeController> logger, IMoneyBL money, IFightingBL fightingBL)
     {
       _logger = logger;
       _moneyBL = money;
+      _fightingBL = fightingBL;
     }
 
     public IActionResult Index()
@@ -41,6 +43,12 @@ namespace ZombieWars.Controllers
     public IActionResult MakeMoney(int money)
     {
       return new JsonResult(money);
+    }
+
+    public IActionResult DoDamage(int baseDamage, UserModel player, MonsterModel monster)
+    {
+      var damageDone = _fightingBL.CalculateDamage(baseDamage);
+      return new JsonResult(damageDone);
     }
 
     public IActionResult TestMoney()

@@ -8,6 +8,10 @@
       })
     }
 
+    const damageToMonster = (baseDamage) => {
+   
+    }
+
     // const showMoney = (event) => {
     //   let randomMoney = Math.floor(Math.random() * 100);
     //   if (isPrime(randomMoney)) {
@@ -63,36 +67,39 @@
       }
       return damageDone;
     }
-
-    const damageToMonster = (baseDamage) => {
-      console.log(inventory.knife);
-      let fightMove;
-      if (baseDamage == 1) {
-        fightMove = "punched ";
-      } else if (baseDamage == 5) {
-        fightMove = "stabbed ";
-      } else {
-        fightMove = "shot ";
-      }
-
-      let damageDone = calculateDamage(baseDamage);
-      let currentMonsterHp = document.querySelector(".currentMonsterHp").innerHTML;
-      let newMonsterHp = currentMonsterHp - damageDone;
-      let latestDamageToMonster = document.querySelector(".damage-to-monster");
-
-      if (newMonsterHp < 1) {
-        document.querySelector(".monsterDead").innerHTML = "You killed it!"
-
-        logEvent(`You killed it`, `doing ${damageDone} damage!`);
-      } else {
-        latestDamageToMonster.innerHTML = `(-${damageDone})`;
-        document.querySelector(".currentMonsterHp").innerHTML = newMonsterHp;
-        logEvent(`You ${fightMove} it`, `doing ${damageDone} damage!`);
-        retaliate("Zombie");
-      }
       
-      return damageDone;
-    }
+    //   return damageDone;
+    // }
+
+    // const damageToMonster = (baseDamage) => {
+    //   console.log(inventory.knife);
+    //   let fightMove;
+    //   if (baseDamage == 1) {
+    //     fightMove = "punched ";
+    //   } else if (baseDamage == 5) {
+    //     fightMove = "stabbed ";
+    //   } else {
+    //     fightMove = "shot ";
+    //   }
+
+    //   let damageDone = calculateDamage(baseDamage);
+    //   let currentMonsterHp = document.querySelector(".currentMonsterHp").innerHTML;
+    //   let newMonsterHp = currentMonsterHp - damageDone;
+    //   let latestDamageToMonster = document.querySelector(".damage-to-monster");
+
+    //   if (newMonsterHp < 1) {
+    //     document.querySelector(".monsterDead").innerHTML = "You killed it!"
+
+    //     logEvent(`You killed it`, `doing ${damageDone} damage!`);
+    //   } else {
+    //     latestDamageToMonster.innerHTML = `(-${damageDone})`;
+    //     document.querySelector(".currentMonsterHp").innerHTML = newMonsterHp;
+    //     logEvent(`You ${fightMove} it`, `doing ${damageDone} damage!`);
+    //     retaliate("Zombie");
+    //   }
+      
+    //   return damageDone;
+    // }
 
     const logEvent = (event = "event", message = "message") => {
       let newLogRow = `<tr> <td>${event}</td> <td>${message}</td> </tr>`;
