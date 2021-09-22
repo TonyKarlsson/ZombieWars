@@ -26,14 +26,7 @@ namespace ZombieWars.Controllers
       player.Name = "Tony";
       player.Money = 100;
       player.Hp = 110;
-
-      // var monster = new MonsterModel();
-      // monster.Type = "Zombie";
-      // monster.Hp = 60;
-      // monster.Damage = 8;
-
-      // Replace the two functions above with more of whats below
-
+      
       var model = new HomeViewModel();
       model.User = player;
 
