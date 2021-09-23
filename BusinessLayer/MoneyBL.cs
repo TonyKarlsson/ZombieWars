@@ -24,7 +24,6 @@ namespace ZombieWars.BusinessLayer
           return false;
         }
       }
-
       return num > 1;
     }
 
